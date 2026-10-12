@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debouncing Visualizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="title">Welcome!</h1>
+
+    <div class="container">
+      <h2>Debouncing Event Visualizer</h2>
+      <h3>By:- Shrey Madaan</h3>
+
+      <p class="subtitle">
+        Click the button below repeatedly. The debounced execution
+        will trigger only after 500ms of inactivity.
+      </p>
+
+      <div class="btn-container">
+        <button class="btn" id="clickBtn">Trigger Event</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-label">Total Clicks</span>
+          <span class="stat-value" id="clickCountDisplay">0</span>
+        </div>
+
+        <div class="stat-card">
+          <span class="stat-label">Debounced Calls</span>
+          <span class="stat-value" id="executionCountDisplay">0</span>
+        </div>
+      </div>
+
+      <div>
+        <span class="status-badge" id="statusIndicator">Ready</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
